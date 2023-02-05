@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.top {
+    background-color: rgb(88, 88, 221);
+    height: 420px;
+}
+
+header {
+    position: absolute;
+    top: 25px;
+    left: 95px;
+    right: 95px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #333;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #fff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+header .navbar ul li ul li ul {
+    left: 200px;
+    top: 0;
+}
+
+header .navbar ul li:hover>ul {
+    display: initial;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.text {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    top: 170px;
+    text-transform: capitalize;
+    color: #fff;
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.links p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px
+}
+
+.links a {
+    color: #fff;
+    padding-right: 15px;
+    white-space: break-spaces;
+}
+
+.getin {
+    width: 100%;
+    padding: 112px 85px;
+    line-height: 10px;
+}
+
+.getin h1 {
+    text-transform: capitalize;
+    color: rgb(88, 88, 221);
+}
+
+.getin .ptouch {
+    margin-top: 25px;
+
+    margin-top: 25px;
+}
+
+.getin p {
+    width: 48%;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 20px;
+    margin-top: 15px;
+}
+
+.input {
+    display: flex;
+    margin-right: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input .inputs {
+    width: 50%;
+    gap: 10px;
+}
+
+.input .inputs input {
+    width: 99%;
+    gap: 10px;
+}
+
+.registration {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    transform: translateX(-110px);
+}
+
+.kantainer {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.form-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 6px;
+    color: #fff;
+
+}
+
+.main-user-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+    width: 124%;
+}
+
+.user-input-box:nth-child(2n) {
+    justify-content: end;
+}
+
+.user-input-box {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+
+.user-input-box label {
+    width: 95%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.user-input-box input {
+    height: 60px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid #ced4ce;
+    padding: 0 10px;
+}
+
+.submit {
+    width: 100px;
+    height: 60px;
+}
+
+.submit input {
+    background: linear-gradient(270deg, #f82a7e 0%, #752a90 100%);
+    border-radius: 30px;
+    width: 270px;
+    height: 80px;
+}
+
+.footer {
+    background-color: #efefef;
+    padding: 70px 0;
+}
+
+.ruw {
+    display: flex;
+}
+
+.footer .matn {
+    width: 50%;
+    text-align: center;
+    margin: 0 320px;
+    font-size: 13px;
+}
+
+.zmatn .submit-matn input {
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    background: linear-gradient(270deg, #f82a7e 0%, #752a90 100%);
+    font-size: 18px;
+    font-family: fantasy;
+    margin: 10px 41%;
+    width: 230px;
+    height: 60px;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+}
+
+.footer-col .social-link a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.footer-col .social-link a:hover {
+    color: #24262b;
+    background-color: #fff;
+}
+
+.footer .cuntainer.ruw a:hover::after {
+    content: '';
+    color: black;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #eeaac1;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 20px;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background-color: #eee;
+    }
+
+    header .navbar ul li ul li ul {
+        width: 100%;
+        left: 0;
+    }
+
+    #menu-bar:checked~.navbar {
+        display: initial;
+    }
+}
+
+@media(max-width:600px) {
+    .kontainer {
+        min-width: 280px;
+    }
+
+    .user-input-box {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .user-input-box:nth-child(2n) {
+        justify-content: space-between;
+    }
+
+    .main-user-info {
+        max-height: 380px;
+        overflow: auto;
+    }
+}
