@@ -14,41 +14,42 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="container-2">
-            <!-- header -->
-            <header>
-                <!-- navbar -->
-                <a href="#" class="logo">props</a>
-                <input type="checkbox" id="menu-bar">
-                <label for="menu-bar">menu</label>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">properties<i class="fa fa-caret-down"
-                                    style="font-size:16px;padding-left: 10px;"></i></a>
+    <!-- first menu -->
+    <div class="top">
+        <header>
+            <!-- navbar -->
+            <a href="#" class="logo">props</a>
+            <input type="checkbox" id="menu-bar">
+            <label for="menu-bar">menu</label>
+            <nav class="navbar">
+                <!-- menu drop down -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">properties<i class="fa fa-caret-down"
+                                style="font-size:16px;padding-left: 10px;"></i></a>
 
-                            <ul>
-                                <li><a href="#">buy properties</a></li>
-                                <li><a href="#">sell properties</a></li>
-                                <li><a href="#">dropdown<i class="fa fa-caret-right"
-                                            style="font-size:16px;padding-left: 66px;"></i>
-                                    </a>
-                                    <ul>
-                                        <li><a href="#">sub menu one</a></li>
-                                        <li><a href="#">sub menu two</a></li>
-                                        <li><a href="#">sub menu three</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">services</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="end.html">contact us</a></li>
-                    </ul>
-                </nav>
-            </header>
-        </div>
+                        <ul>
+                            <li><a href="#">buy properties</a></li>
+                            <li><a href="#">sell properties</a></li>
+                            <li><a href="#">dropdown<i class="fa fa-caret-right"
+                                        style="font-size:16px;padding-left: 66px;"></i>
+                                </a>
+                                <ul>
+                                    <li><a href="#">sub menu one</a></li>
+                                    <li><a href="#">sub menu two</a></li>
+                                    <li><a href="#">sub menu three</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="end.html">contact us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
         <!-- main picture -->
         <div class="center">
             <h1 class="main-text">find a perfect dream house</h1>
@@ -65,25 +66,26 @@
     <div class="features">
         <div class="flex ">
             <div>
-                <i class="fa fa-building-o" style="font-size:100px"></i>
+                <i class="fa fa-building-o"></i>
+                <p>New Properties</p>
             </div>
         </div>
         <div class="flex ">
             <div>
-                <i class="fa fa-user" style="font-size:100px"></i>
-
+                <i class="fa fa-user"></i>
+                <p>Contact Agent</p>
             </div>
         </div>
         <div class="flex ">
             <div>
-                <i class='far fa-building' style='font-size:100px'></i>
-
+                <i class="fa fa-building-o"></i>
+                <p>Building for Sale</p>
             </div>
         </div>
         <div class="flex ">
             <div>
-                <i class="fa fa-home" style="font-size:100px"></i>
-
+                <i class="fa fa-home"></i>
+                <p>House for Sale</p>
             </div>
         </div>
     </div>
@@ -99,11 +101,11 @@
             </div>
         </div>
     </div>
-    <!-- houses with the price,location -->
-    <div class="box">
+    <!-- house detail with their price -->
+    <div class="new">
         <div class="pic">
-            <div class="m1">
-                <div class="n1">
+            <div class="img"><img src="images/sell-house1.webp" alt="">
+                <div class="info">
                     <div class="gh">
                         <span class="y">$3,298,000</span><br>
                         <div class="l"></div><br>
@@ -116,8 +118,8 @@
                     </div>
                 </div>
             </div>
-            <div class="m2">
-                <div class="n1">
+            <div class="img"><img src="images/sell-house2.webp" alt="">
+                <div class="info">
                     <div class="gh">
                         <span class="y">$3,298,000</span><br>
                         <div class="l"></div><br>
@@ -129,9 +131,10 @@
                                 style="font-size: 16px; margin-left: 10px;">2 bath</span></i>
                     </div>
                 </div>
+
             </div>
-            <div class="m3">
-                <div class="n1">
+            <div class="img"><img src="images/sell-house3.webp" alt="">
+                <div class="info">
                     <div class="gh">
                         <span class="y">$3,298,000</span><br>
                         <div class="l"></div><br>
@@ -143,12 +146,14 @@
                                 style="font-size: 16px; margin-left: 10px;">2 bath</span></i>
                     </div>
                 </div>
+
             </div>
         </div>
-        <div class="change">
-            <span class="in1"><input type="submit" value="prev" class="j"></span>
-            <span class="in2"><input type="submit" value="next" class="j"></span>
-        </div>
+    </div>
+    <div class="change">
+        <span class="in1"><input type="submit" value="prev" class="j"></span>
+        <span class="in2"><input type="submit" value="next" class="j"></span>
+    </div>
     </div>
     <div class="sh">
         <div class="testio">
@@ -198,7 +203,8 @@
             <div class="aksl"><img src="images/hero.jpg" alt=""></div>
             <div class="aksr">
                 <div class="aksr2">
-                    <span class="material"><i class="material-icons">home</i></span>
+                    <span class="material"><i class="fa fa-home" style="font-size:26px"></i>
+                    </span>
                     <ul>
                         <li>
                             <h3>quality properties</h3>
@@ -207,19 +213,22 @@
                     </ul>
                 </div>
                 <div class="aksr3">
-                    <span class="material"><i class="material-icons">home</i></span>
+                    <span class="material"><i class="fa fa-user" style="font-size:26px"></i>
+                    </span>
                     <ul>
                         <li>
-                            <h3>quality properties</h3>
+                            <h3>TOP RATED AGENT</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
                         </li>
                     </ul>
                 </div>
                 <div class="aksr4">
-                    <span class="material"><i class="material-icons">home</i></span>
+                    <span class="material"><i class="fa fa-shield" style="font-size: 26px;"></i>
+
+                    </span>
                     <ul>
                         <li>
-                            <h3>quality properties</h3>
+                            <h3>EASY AND SAFE</h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste.</p>
                         </li>
                     </ul>
@@ -251,10 +260,10 @@
             <div class="h1">
                 <h1>our agents</h1>
             </div>
-            <div class="pt">
-                <p>oercdv mhkuk gfva hrh efe hfhdf nkr nfnn ,hxet w e ghj6jhv rg gr hhheg sefs
-            </div>
-            </p>
+        </div>
+        <div class="pt">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam enim pariatur similique debitis vel nisi
+                qui reprehenderit totam? Quod maiores.</p>
         </div>
     </div>
     <div class="wrap">
@@ -268,14 +277,14 @@
                         vel culpa, quidem, odit earum laudantium ratione facilis laborum unde maxime libero! Ut
                         accusantium non, sequi quisquam voluptates hic doloribus distinctio.</p>
                     <div class="network">
-                        <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-facebook" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-linkedin" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i>
-                        </a>
+                        <li><a href="#"><i class="fa fa-twitter"></i>
+                            </a></li>
+                        <li> <a href="#"><i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li> <a href="#"><i class="fa fa-linkedin"></i>
+                            </a></li>
+                        <li class="instagram"> <a href="#"><i class="fa fa-instagram"></i>
+                            </a></li>
                     </div>
                 </div>
             </div>
@@ -290,14 +299,14 @@
                         vel culpa, quidem, odit earum laudantium ratione facilis laborum unde maxime libero! Ut
                         accusantium non, sequi quisquam voluptates hic doloribus distinctio.</p>
                     <div class="network">
-                        <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-facebook" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-linkedin" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i>
-                        </a>
+                        <li><a href="#"><i class="fa fa-twitter"></i>
+                            </a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i>
+                            </a></li>
+                        <li class="instagram"> <a href="#"><i class="fa fa-instagram"></i>
+                            </a></li>
                     </div>
                 </div>
             </div>
@@ -312,70 +321,87 @@
                         vel culpa, quidem, odit earum laudantium ratione facilis laborum unde maxime libero! Ut
                         accusantium non, sequi quisquam voluptates hic doloribus distinctio.</p>
                     <div class="network">
-                        <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-facebook" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-linkedin" style="font-size:24px"></i>
-                        </a>
-                        <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i>
-                        </a>
+                        <li><a href="#"><i class="fa fa-twitter"></i>
+                            </a></li>
+                        <li> <a href="#"><i class="fa fa-facebook"></i>
+                            </a></li>
+                        <li> <a href="#"><i class="fa fa-linkedin"></i>
+                            </a></li>
+                        <li class="instagram"> <a href="#"><i class="fa fa-instagram"></i>
+                            </a></li>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- footer  -->
-    <footer class="footer">
-        <div class="cuntainer">
-            <div class="ruw">
-                <div class="footer-col">
-                    <h4>contact</h4>
+    <div class="footer">
+        <div class="footer-text">
+            <h1>be a part of our growing real state agent</h1>
+            <div class="footer-input">
+                <input type="submit" value="APPLY FOR REAL STATE">
+            </div>
+        </div>
+        <div class="item">
+            <div class="colomn">
+                <div class="widget">
+                    <h3>contact</h3>
+                    <address>43 Raymouth Rd. Baltemoer, London 3910</address>
                     <ul>
-                        <li><a href="#"> 43 Raymouth Rd.baltemoer,london 3910</a></li>
                         <li><a href="#">+1(123)-456-7890</a></li>
                         <li><a href="#">+1(123)-456-7890</a></li>
                         <li><a href="#">info@mydomain.com</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>sources</h4>
-                    <ul>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Vision</a></li>
-                        <li><a href="#">Mission </a></li>
-                        <li><a href="#">Terms </a></li>
-                        <li><a href="#">Privacy </a></li>
+            </div>
+            <div class="colomn">
+                <div class="widget widget-2">
+                    <h3>sources</h3>
+                    <ul class="ul-left">
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">services</a></li>
+                        <li><a href="#">vision</a></li>
+                        <li><a href="#">mission</a></li>
+                        <li><a href="#">terms</a></li>
+                        <li><a href="#">privacy</a></li>
                     </ul>
-                </div>
-                <div class="footer-col">
-                    <ul>
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Business</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Blog</a></li>
+                    <ul class="ul-right">
+                        <li><a href="#">partners</a></li>
+                        <li><a href="#">business</a></li>
+                        <li><a href="#">careers</a></li>
+                        <li><a href="#">blog</a></li>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Creative</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>links</h4>
+            </div>
+            <div class="colomn colomn-3">
+                <div class="widget">
+                    <h3>links</h3>
                     <ul>
-                        <li><a href="#">Our Vision</a></li>
-                        <li><a href="#">About us</a></li>
+                        <li><a href="#">our vision</a></li>
+                        <li><a href="#">about us</a></li>
                         <li><a href="#">contact us</a></li>
                     </ul>
-                    <div class="social-link">
-                        <a href="#"><i class="fa fa-facebook" style="font-size:24px"></i></a>
-                        <a href="#"><i class="fa fa-twitter" style="font-size:24px"></i></a>
-                        <a href="#"><i class="fa fa-instagram" style="font-size:24px"></i></a>
-                        <a href="#"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
-                    </div>
+                    <ul class="app">
+                        <li><a href="#"><span><i class="fa fa-instagram"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-facebook"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-twitter"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-linkedin"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-pinterest"></i></span></a></li>
+                        <li><a href="#"><span><i class="fa fa-dribbble"></i></span></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+        <div class="moral">
+            <div class="moralp">
+                <p>Copyright ©2023 All rights reserved | This template is made with<i class="fa fa-heart"
+                        style="color:red"></i>
+                    by Colorlib</p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
